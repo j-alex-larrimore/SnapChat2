@@ -59,7 +59,7 @@ public class SendPicture extends Activity {
                 Intent intent = new Intent(getApplicationContext(), ChoosePic.class);
                 String str = (String) mArrayAdapter.getItem(position);
                 targetDevice = str;
-                clickedDevice = MainActivity2.deviceList.get(position);
+                //clickedDevice = MainActivity.deviceList.get(position);
                 Toast.makeText(getApplicationContext(), "Clicked -" + str, Toast.LENGTH_LONG).show();
 
                 startActivity(intent);

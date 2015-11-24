@@ -321,7 +321,7 @@ public class BluetoothChatFragment extends Fragment {
 //                    String writeMessage = new String(writeBuf);
 //                    mConversationArrayAdapter.add("Me:  " + writeMessage);
 
-                    ImageView image = (ImageView) getView().findViewById(R.id.image);
+                    ImageView image = (ImageView) getActivity().findViewById(R.id.image);
                     image.setImageDrawable(d);
 
                     break;
@@ -334,7 +334,7 @@ public class BluetoothChatFragment extends Fragment {
                     Bitmap bitmap = BitmapFactory.decodeByteArray(readBuf, 0, readBuf.length);
                     //saveImage(bitmap);
 
-                    ImageView image2 = (ImageView) getView().findViewById(R.id.image);
+                    ImageView image2 = (ImageView) getActivity().findViewById(R.id.image);
                     image2.setImageBitmap(bitmap);
 
                     Toast.makeText(getActivity(), "Received Message", Toast.LENGTH_SHORT).show();
